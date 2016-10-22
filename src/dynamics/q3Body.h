@@ -50,6 +50,8 @@ enum q3BodyType
 class q3Body
 {
 public:
+	friend class WorldPhysX;
+	friend class WorldController;
 
 	// Adds a box to this body. Boxes are all defined in local space
 	// of their owning body. Boxes cannot be defined relative to one

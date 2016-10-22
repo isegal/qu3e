@@ -72,6 +72,7 @@ public:
 
 class q3Scene
 {
+	friend class WorldPhysX;
 public:
 	q3Scene( r32 dt, const q3Vec3& gravity = q3Vec3( r32( 0.0 ), r32( -9.8 ), r32( 0.0 ) ), i32 iterations = 20 );
 	~q3Scene( );
